@@ -118,8 +118,59 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="螢幕擷取畫面 2026-09-03 213613" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\螢幕擷取畫面 2026-09-03 213613.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="氣槽" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\氣槽.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="待兼福來" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\待兼福來.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="青雲天空" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\青雲天空.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="東京競馬場20231014-P10322261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\東京競馬場20231014-P10322261.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="帝王光環" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\帝王光環.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="萊茵實力" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\萊茵實力.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="特別周" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\特別周.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="魯道夫象徵" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\魯道夫象徵.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="小栗帽" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\小栗帽.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="東海帝皇" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\東海帝皇.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="雪之美人" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\雪之美人.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="曼城茶座" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\曼城茶座.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="丸善斯基" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\丸善斯基.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="目白麥昆" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\目白麥昆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="成田大進" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\成田大進.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="菱曙" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\菱曙.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="里見光鑽" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\里見光鑽.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="超級小溪" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\超級小溪.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="oguri cap " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oguri cap .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,86 +178,50 @@
   <data name="東京競馬場_-_panoramio_()" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\東京競馬場_-_panoramio_().jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="春烏拉拉" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\春烏拉拉.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="oguri cap shitpost" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oguri cap shitpost.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="東京競馬場20231014-P1032226" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\東京競馬場20231014-P1032226.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="東京競馬場_-_panoramio_(4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\東京競馬場_-_panoramio_(4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="東京競馬場20231014-P10322261" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\東京競馬場20231014-P10322261.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="丸善斯基" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\丸善斯基.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="大和赤驥" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\大和赤驥.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="大鳴大放" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Images\大鳴大放.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="小栗帽" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\小栗帽.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="北部玄駒" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\北部玄駒.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="玉藻十字" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\玉藻十字.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="目白麥昆" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\目白麥昆.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="目白善信" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\目白善信.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="伏特加" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\伏特加.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="成田大進" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\成田大進.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="成田白仁" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\成田白仁.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="菱亞馬遜" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\菱亞馬遜.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="米浴" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Images\米浴.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="里見光鑽" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\里見光鑽.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="黃金船" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\黃金船.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="東海帝皇" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\東海帝皇.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="北部玄駒1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\北部玄駒.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="青竹回憶" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\青竹回憶.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="目白善信" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\目白善信.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="青雲天空" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\青雲天空.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="帝王光環" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\帝王光環.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="待兼福來" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\待兼福來.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="春烏拉拉" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\春烏拉拉.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="美浦波旁" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\美浦波旁.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="氣槽" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\氣槽.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="特別周" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\特別周.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="富士奇蹟" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\富士奇蹟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="真機伶" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Images\真機伶.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="玉藻十字" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\玉藻十字.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="大和赤驥" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\大和赤驥.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="愛慕織姬" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\愛慕織姬.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="黃金船1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\黃金船.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="成田白仁" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\成田白仁.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="神鷹" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Images\神鷹.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,52 +229,49 @@
   <data name="草上飛" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Images\草上飛.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="曼城茶座" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\曼城茶座.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="曼城茶座1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\曼城茶座.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="雪之美人" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\雪之美人.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="伏特加" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\伏特加.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="勝利獎券" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\勝利獎券.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="東京競馬場_-_panoramio_(4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\東京競馬場_-_panoramio_(4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="富士奇蹟" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\富士奇蹟.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="螢幕擷取畫面 2026-09-03 213613" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\螢幕擷取畫面 2026-09-03 213613.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="無聲鈴鹿" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\無聲鈴鹿.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="菱亞馬遜" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\菱亞馬遜.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="菱曙" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\菱曙.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="萊茵實力" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\萊茵實力.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="超級小溪" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\超級小溪.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="黃金船" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\黃金船.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="微光飛駒" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\微光飛駒.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="愛慕織姬" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\愛慕織姬.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="愛麗速子" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\愛麗速子.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="魯道夫象徵" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Images\魯道夫象徵.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="北部玄駒" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\北部玄駒.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="醒目飛鷹" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Images\醒目飛鷹.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="無聲鈴鹿" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\無聲鈴鹿.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="愛麗速子" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\愛麗速子.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="美浦波旁" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\美浦波旁.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="勝利獎券" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\勝利獎券.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="東京競馬場20231014-P1032226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\東京競馬場20231014-P1032226.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="優秀素質" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Images\優秀素質.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="微光飛駒" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\微光飛駒.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="青竹回憶" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Images\青竹回憶.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="i-img1200x820-17680379191206uw951" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\i-img1200x820-17680379191206uw951.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
