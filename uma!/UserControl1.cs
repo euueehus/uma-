@@ -70,7 +70,7 @@ namespace uma_
             ShowCurrentHorse();
         }
 
-        // 下面一位
+        
         private void go_Click(object sender, EventArgs e)
         {
             if (horses == null || horses.Count == 0) return;
@@ -81,7 +81,17 @@ namespace uma_
 
             ShowCurrentHorse();
         }
+        private void horsemabe(string name)
+        {
+            Random rand = new Random();
 
+
+        }
+        
+        private void horse_card_Load(object sender, EventArgs e)
+        {
+
+        }
         private void pic_uma_Click(object sender, EventArgs e)
         {
 
@@ -97,9 +107,6 @@ namespace uma_
 
         }
 
-        private void horse_card_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

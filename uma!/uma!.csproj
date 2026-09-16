@@ -360,5 +360,10 @@
   <ItemGroup>
     <None Include="Resources\i-img1200x820-17680379191206uw951.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\杏目.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

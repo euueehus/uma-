@@ -49,7 +49,10 @@ namespace uma_
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            bet bet = new bet();
+            bet.SelectedHorses = SelectedHorses;
+            this.Hide();  //要用hideeeeeeee         
+            bet.ShowDialog();
         }
     }
 }

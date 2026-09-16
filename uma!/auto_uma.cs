@@ -28,6 +28,11 @@ namespace uma_
             public int Burst;
             public int Luck;
 
+            public int RaceSpeed;
+            public int RaceStamina;
+            public int RaceBurst;
+            public UmaForm Form;
+
             public Horse(string name, int speed, int stamina, int burst, int luck)
             {
                 Name = name;
@@ -81,6 +86,7 @@ namespace uma_
             new Horse("真機伶", 87, 78, 91, 80),
             new Horse("富士奇蹟", 90, 84, 86, 82),
             new Horse("大鳴大放", 89, 86, 88, 84),
+            new Horse("杏目", 94, 88, 96, 86),
         };
 
         private void button1_Click(object sender, EventArgs e)
@@ -89,7 +95,7 @@ namespace uma_
             int uma_count_value = rand.Next(5, 18);   
 
             selectedHorses = allHorses.OrderBy(x => rand.Next()).Take(uma_count_value).ToList();
-
+            RollRaceStats(selectedHorses);
             label2.Text = string.Join("\n", selectedHorses.Select(h => h.Name));
             label2.Visible = true;
             
@@ -103,6 +109,82 @@ namespace uma_
             showForm.SelectedHorses = selectedHorses;   
             this.Hide();
             showForm.ShowDialog();
+        }
+        public enum UmaForm
+        {
+            Slump,   // 不調
+            Normal,  // 普通
+            Good,    // 好調
+            Peak     // 絶好調
+        }
+
+        // 權重：數字愈大愈容易抽到
+        private UmaForm RollForm(Random rand, int luck)
+        {
+            int luckBonus = Math.Max(0, luck - 70);   // 70 當「普通運」，再高的才加分
+
+            int slumpW = Math.Max(4, 22 - luckBonus / 2);  // 運好 → 不調變少
+            int normalW = 34;
+            int goodW = 28 + luckBonus / 3;
+            int peakW = 8 + luckBonus / 2;               // 運好 → 絶好調變多
+
+            int total = slumpW + normalW + goodW + peakW;
+            int roll = rand.Next(1, total + 1);             // 1 ~ total（含）
+
+            if (roll <= slumpW) return UmaForm.Slump;
+            roll -= slumpW;
+            if (roll <= normalW) return UmaForm.Normal;
+            roll -= normalW;
+            if (roll <= goodW) return UmaForm.Good;
+            return UmaForm.Peak;
+        }
+
+        private void GetFormOffset(UmaForm form, out int minOff, out int maxOff)
+        {
+            switch (form)
+            {
+                case UmaForm.Slump:
+                    minOff = -16; maxOff = 1;
+                    break;
+                case UmaForm.Normal:
+                    minOff = -5; maxOff = 6;
+                    break;
+                case UmaForm.Good:
+                    minOff = 3; maxOff = 12;
+                    break;
+                default: 
+                    minOff = 10; maxOff = 20;
+                    break;
+            }
+        }
+
+        private int RollStat(Random rand, int baseValue, UmaForm form)
+        {
+            int minOff, maxOff;
+            GetFormOffset(form, out minOff, out maxOff);
+
+            int formRoll = rand.Next(minOff, maxOff + 1);  // 狀態帶來的大方向
+            int noise = rand.Next(-3, 4);                  // 這一圍自己的小波動 -3~+3
+
+            int value = baseValue + formRoll + noise;
+
+            if (value < 40) value = 40;
+            if (value > 120) value = 120;
+            return value;
+        }
+
+        private void RollRaceStats(List<Horse> raceHorses)
+        {
+            Random rand = new Random();  
+
+            foreach (Horse horse in raceHorses)
+            {
+                horse.Form = RollForm(rand, horse.Luck);
+
+                horse.RaceSpeed = RollStat(rand, horse.Speed, horse.Form);
+                horse.RaceStamina = RollStat(rand, horse.Stamina, horse.Form);
+                horse.RaceBurst = RollStat(rand, horse.Burst, horse.Form);
+            }
         }
     }
 }
