@@ -58,6 +58,7 @@
     <Compile Include="bet.Designer.cs">
       <DependentUpon>bet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +84,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="race.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="race.Designer.cs">
+      <DependentUpon>race.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaceSim.cs" />
     <Compile Include="show.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +119,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="race.resx">
+      <DependentUpon>race.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="show.resx">
       <DependentUpon>show.cs</DependentUpon>

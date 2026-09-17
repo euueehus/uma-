@@ -10,7 +10,7 @@ namespace uma_
     public partial class show : Form
     {
         public List<auto_uma.Horse> SelectedHorses { get; set; }
-
+        public List<auto_uma.Horse> allHorses{get; set;}
         public show()
         {
             InitializeComponent();
@@ -45,12 +45,14 @@ namespace uma_
             if (SelectedHorses == null || SelectedHorses.Count == 0) return;
 
             horse_card1.SetHorses(SelectedHorses);   
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             bet bet = new bet();
             bet.SelectedHorses = SelectedHorses;
+            bet.allHorses = allHorses;
             this.Hide();  //要用hideeeeeeee         
             bet.ShowDialog();
         }

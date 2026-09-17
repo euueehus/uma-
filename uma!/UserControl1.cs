@@ -40,7 +40,7 @@ namespace uma_
 
            
             this.uma_st.Text = $"速度:{horse.Speed}  耐力:{horse.Stamina}\n爆發:{horse.Burst}  幸運:{horse.Luck}";
-
+            
 
             string pathPng = Path.Combine(Application.StartupPath, "Resources", "Images", horse.Name + ".png");
             string pathJpg = Path.Combine(Application.StartupPath, "Resources", "Images", horse.Name + ".jpg");

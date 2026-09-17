@@ -106,7 +106,9 @@ namespace uma_
         private void button2_Click(object sender, EventArgs e)
         {
             show showForm = new show();
-            showForm.SelectedHorses = selectedHorses;   
+            showForm.SelectedHorses = selectedHorses;
+            showForm.allHorses = allHorses;
+
             this.Hide();
             showForm.ShowDialog();
         }

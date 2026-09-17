@@ -78,9 +78,9 @@
             // 
             // pic_uma
             // 
-            this.pic_uma.Location = new System.Drawing.Point(667, 105);
+            this.pic_uma.Location = new System.Drawing.Point(667, 18);
             this.pic_uma.Name = "pic_uma";
-            this.pic_uma.Size = new System.Drawing.Size(159, 152);
+            this.pic_uma.Size = new System.Drawing.Size(159, 239);
             this.pic_uma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_uma.TabIndex = 0;
             this.pic_uma.TabStop = false;

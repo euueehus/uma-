@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.horse_card1 = new uma_.horse_card();
+            this.horse_card1 = new horse_card();
             this.SuspendLayout();
             // 
             // button1
