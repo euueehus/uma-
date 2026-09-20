@@ -27,6 +27,8 @@ namespace uma_
             public int Stamina;
             public int Burst;
             public int Luck;
+            public System.Collections.Generic.List<UmaSkill> Skills =
+            new System.Collections.Generic.List<UmaSkill>();
 
             public int RaceSpeed;
             public int RaceStamina;
@@ -187,6 +189,165 @@ namespace uma_
                 horse.RaceStamina = RollStat(rand, horse.Stamina, horse.Form);
                 horse.RaceBurst = RollStat(rand, horse.Burst, horse.Form);
             }
+        }
+        private void AttachSkills()
+        {
+            foreach (var h in allHorses)
+                GiveSkills(h);
+        }
+
+        private void GiveSkills(Horse h)
+        {
+            h.Skills.Clear();
+
+            switch (h.Name)
+            {
+                case "特別周":
+                    h.Skills.Add(new UmaSkill("流星衝刺", SkillWhen.Late, SkillWhat.Accel, 0.30, 4));
+                    break;
+                case "無聲鈴鹿":
+                    h.Skills.Add(new UmaSkill("前方的風景絕不讓出", SkillWhen.Early, SkillWhat.TargetUp, 0.035, 6));
+                    break;
+                case "東海帝皇":
+                    h.Skills.Add(new UmaSkill("帝王舞步", SkillWhen.Last200, SkillWhat.Accel, 0.36, 3));
+                    break;
+                case "小栗帽":
+                    h.Skills.Add(new UmaSkill("不屈之心", SkillWhen.Late, SkillWhat.TargetUp, 0.038, 4));
+                    break;
+                case "黃金船":
+                    h.Skills.Add(new UmaSkill("往痛處招呼", SkillWhen.Last200, SkillWhat.Accel, 0.40, 3));
+                    break;
+                case "米浴":
+                    h.Skills.Add(new UmaSkill("藍薔薇", SkillWhen.Mid, SkillWhat.Heal, 16, 0));
+                    break;
+                case "伏特加":
+                    h.Skills.Add(new UmaSkill("紅移", SkillWhen.Late, SkillWhat.TargetUp, 0.036, 4));
+                    break;
+                case "大和赤驥":
+                    h.Skills.Add(new UmaSkill("紅色王牌", SkillWhen.Late, SkillWhat.TargetUp, 0.034, 4));
+                    break;
+                case "草上飛":
+                    h.Skills.Add(new UmaSkill("貴顯的使命", SkillWhen.Late, SkillWhat.TargetUp, 0.033, 4));
+                    break;
+                case "神鷹":
+                    h.Skills.Add(new UmaSkill("El Número 1", SkillWhen.Mid, SkillWhat.Accel, 0.28, 3));
+                    break;
+                case "氣槽":
+                    h.Skills.Add(new UmaSkill("女帝的氣場", SkillWhen.Late, SkillWhat.TargetUp, 0.034, 4));
+                    break;
+                case "北部玄駒":
+                    h.Skills.Add(new UmaSkill("沒有秘密", SkillWhen.Late, SkillWhat.TargetUp, 0.036, 4));
+                    break;
+                case "目白麥昆":
+                    h.Skills.Add(new UmaSkill("高貴的使命", SkillWhen.Late, SkillWhat.TargetUp, 0.038, 4));
+                    break;
+                case "帝王光環":
+                    h.Skills.Add(new UmaSkill("Pride of King", SkillWhen.Last200, SkillWhat.TargetUp, 0.04, 4));
+                    break;
+                case "成田白仁":
+                    h.Skills.Add(new UmaSkill("Shadow Break", SkillWhen.Late, SkillWhat.Accel, 0.34, 3));
+                    break;
+                case "美浦波旁":
+                    h.Skills.Add(new UmaSkill("G00 1st.F∞", SkillWhen.Last200, SkillWhat.TargetUp, 0.04, 4));
+                    break;
+                case "春烏拉拉":
+                    h.Skills.Add(new UmaSkill("好厲害好厲害！", SkillWhen.Mid, SkillWhat.Heal, 20, 0));
+                    break;
+                case "優秀素質":
+                    h.Skills.Add(new UmaSkill("略顯平凡的我", SkillWhen.Mid, SkillWhat.Heal, 14, 0));
+                    break;
+                case "曼城茶座":
+                    h.Skills.Add(new UmaSkill("non-disclosure", SkillWhen.Mid, SkillWhat.TargetUp, 0.03, 4));
+                    break;
+                case "里見光鑽":
+                    h.Skills.Add(new UmaSkill("賭上最強之名", SkillWhen.Last200, SkillWhat.TargetUp, 0.04, 4));
+                    break;
+                case "醒目飛鷹":
+                    h.Skills.Add(new UmaSkill("キラキラ☆STARDOM", SkillWhen.Mid, SkillWhat.Accel, 0.30, 3));
+                    break;
+                case "丸善斯基":
+                    h.Skills.Add(new UmaSkill("白色閃電給你看", SkillWhen.Early, SkillWhat.TargetUp, 0.035, 5));
+                    break;
+                case "菱亞馬遜":
+                    h.Skills.Add(new UmaSkill("亞馬遜精神", SkillWhen.Late, SkillWhat.Accel, 0.28, 3));
+                    break;
+                case "超級小溪":
+                    h.Skills.Add(new UmaSkill("清澈奔流", SkillWhen.Mid, SkillWhat.Heal, 15, 0));
+                    break;
+                case "萊茵實力":
+                    h.Skills.Add(new UmaSkill("Fairy tale", SkillWhen.Late, SkillWhat.TargetUp, 0.032, 4));
+                    break;
+                case "待兼福來":
+                    h.Skills.Add(new UmaSkill("幸運之星", SkillWhen.Mid, SkillWhat.Heal, 20, 0));
+                    break;
+                case "微光飛駒":
+                    h.Skills.Add(new UmaSkill("燈火燦爛", SkillWhen.Early, SkillWhat.Accel, 0.30, 3));
+                    break;
+                case "愛麗速子":
+                    h.Skills.Add(new UmaSkill("U=ma²", SkillWhen.Late, SkillWhat.TargetUp, 0.038, 3));
+                    break;
+                case "青雲天空":
+                    h.Skills.Add(new UmaSkill("一寸先是……", SkillWhen.Early, SkillWhat.TargetUp, 0.03, 5));
+                    break;
+                case "玉藻十字":
+                    h.Skills.Add(new UmaSkill("白色閃電、看招", SkillWhen.Late, SkillWhat.Accel, 0.30, 3));
+                    break;
+                case "魯道夫象徵":
+                    h.Skills.Add(new UmaSkill("皇帝的驕傲", SkillWhen.Late, SkillWhat.TargetUp, 0.04, 4));
+                    break;
+                case "成田大進":
+                    h.Skills.Add(new UmaSkill("Nemesis", SkillWhen.Late, SkillWhat.Accel, 0.32, 3));
+                    break;
+                case "愛慕織姬":
+                    h.Skills.Add(new UmaSkill("斬斷命運", SkillWhen.Last200, SkillWhat.TargetUp, 0.038, 4));
+                    break;
+                case "雪之美人":
+                    h.Skills.Add(new UmaSkill("千萬別忘記", SkillWhen.Mid, SkillWhat.Heal, 14, 0));
+                    break;
+                case "青竹回憶":
+                    h.Skills.Add(new UmaSkill("燃燒吧青竹", SkillWhen.Late, SkillWhat.Accel, 0.30, 3));
+                    break;
+                case "勝利獎券":
+                    h.Skills.Add(new UmaSkill("夢要高高掛起", SkillWhen.Last200, SkillWhat.Accel, 0.34, 3));
+                    break;
+                case "目白善信":
+                    h.Skills.Add(new UmaSkill("爆走公路", SkillWhen.Mid, SkillWhat.Heal, 12, 0));
+                    break;
+                case "菱曙":
+                    h.Skills.Add(new UmaSkill("大胃王衝刺", SkillWhen.Late, SkillWhat.TargetUp, 0.03, 4));
+                    break;
+                case "真機伶":
+                    h.Skills.Add(new UmaSkill("一等星", SkillWhen.Early, SkillWhat.Accel, 0.28, 3));
+                    break;
+                case "富士奇蹟":
+                    h.Skills.Add(new UmaSkill("華麗舞台", SkillWhen.Late, SkillWhat.TargetUp, 0.036, 4));
+                    break;
+                case "大鳴大放":
+                    h.Skills.Add(new UmaSkill("最強之座", SkillWhen.Last200, SkillWhat.TargetUp, 0.04, 4));
+                    break;
+                case "杏目":
+                    h.Skills.Add(new UmaSkill("放眼世界", SkillWhen.Late, SkillWhat.TargetUp, 0.042, 4));
+                    break;
+                default:
+                    h.Skills.Add(new UmaSkill("全力奔馳", SkillWhen.Late, SkillWhat.TargetUp, 0.03, 3));
+                    break;
+            }
+
+            // 補通用技
+            if (h.Burst >= h.Stamina + 8)
+                h.Skills.Add(new UmaSkill("追上她!", SkillWhen.Late, SkillWhat.Accel, 0.22, 3));
+            else if (h.Speed >= h.Stamina + 5)
+                h.Skills.Add(new UmaSkill("先頭維持", SkillWhen.Early, SkillWhat.TargetUp, 0.02, 3));
+            else if (h.Stamina >= h.Speed)
+                h.Skills.Add(new UmaSkill("深呼吸", SkillWhen.Mid, SkillWhat.Heal, 10, 0));
+            else
+                h.Skills.Add(new UmaSkill("中盤加速", SkillWhen.Mid, SkillWhat.Accel, 0.2, 3));
+        }
+        
+
+        private void auto_uma_Load(object sender, EventArgs e)
+        {
+            AttachSkills();
         }
     }
 }

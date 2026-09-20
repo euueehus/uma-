@@ -56,7 +56,19 @@ namespace uma_
                 this.pic_uma.Image = null;
 
             this.pic_uma.SizeMode = PictureBoxSizeMode.Zoom;
+            if (horse.Skills != null && horse.Skills.Count > 0)
+            {
+                string a = horse.Skills[0].Name;
+                string b = horse.Skills.Count > 1 ? horse.Skills[1].Name : "";
+                this.uma_sk.Text = string.IsNullOrEmpty(b) ? a : (a + "  /  " + b);
+            }
+            else
+            {
+                this.uma_sk.Text = "—";
+            }
+
         }
+
 
    
         private void back_Click(object sender, EventArgs e)
@@ -107,6 +119,9 @@ namespace uma_
 
         }
 
-        
+        private void uma_sk_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

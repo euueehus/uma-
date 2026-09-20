@@ -97,6 +97,7 @@
     <Compile Include="show.Designer.cs">
       <DependentUpon>show.cs</DependentUpon>
     </Compile>
+    <Compile Include="UmaSkill.cs" />
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
