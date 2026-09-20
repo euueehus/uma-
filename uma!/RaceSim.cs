@@ -75,13 +75,13 @@ namespace uma_
 
                 double phase = r.Position < early ? 0 : r.Position < late ? 1 : 2;
                 double target = TargetSpeed(r, phase);
-                double acc = 0.35 + r.Horse.RaceBurst / 250.0;
+                double acc = 0.22 + r.Horse.RaceBurst / 400.0;
 
                 if (r.Speed < target) r.Speed = Math.Min(target, r.Speed + acc * Dt);
                 else r.Speed = Math.Max(target, r.Speed - acc * 0.7 * Dt);
 
-                double drain = 0.35 + (r.Speed - 14) * 0.08;
-                if (phase == 2) drain *= 1.35;
+                double drain = 0.22 + (r.Speed - 16) * 0.04;
+                if (phase == 2) drain *= 1.20;
                 if (r.Hp > 0) r.Hp -= drain * Dt;
                 else r.Speed *= 0.985;
 
@@ -101,25 +101,35 @@ namespace uma_
 
         private double TargetSpeed(RunnerState r, double phase)
         {
-            double baseV = 14.5 + r.Horse.RaceSpeed / 22.0;
-            double styleMul = 1.0;
+            double baseV = 16.2 + r.Horse.RaceSpeed / 80.0;
 
+            double styleMul;
             if (r.Style == RunStyle.Nige)
-                styleMul = phase == 0 ? 1.06 : phase == 1 ? 1.00 : 0.97;
+                styleMul = phase == 0 ? 1.025 : phase == 1 ? 1.000 : 0.990;
             else if (r.Style == RunStyle.Senko)
-                styleMul = phase == 0 ? 1.02 : phase == 1 ? 1.01 : 0.99;
+                styleMul = phase == 0 ? 1.010 : phase == 1 ? 1.000 : 0.998;
             else if (r.Style == RunStyle.Sashi)
-                styleMul = phase == 0 ? 0.96 : phase == 1 ? 1.00 : 1.04;
+                styleMul = phase == 0 ? 0.985 : phase == 1 ? 1.000 : 1.020;
             else
-                styleMul = phase == 0 ? 0.93 : phase == 1 ? 0.98 : 1.07;
+                styleMul = phase == 0 ? 0.975 : phase == 1 ? 0.995 : 1.035;
 
-            if (r.Horse.Form == auto_uma.UmaForm.Peak) styleMul += 0.03;
-            else if (r.Horse.Form == auto_uma.UmaForm.Good) styleMul += 0.015;
-            else if (r.Horse.Form == auto_uma.UmaForm.Slump) styleMul -= 0.02;
+            if (r.Horse.Form == auto_uma.UmaForm.Peak) styleMul += 0.012;
+            else if (r.Horse.Form == auto_uma.UmaForm.Good) styleMul += 0.006;
+            else if (r.Horse.Form == auto_uma.UmaForm.Slump) styleMul -= 0.010;
+
+            double pack = 0;
+            foreach (var x in Runners) pack += x.Position;
+            pack /= Runners.Count;
+
+            double off = r.Position - pack;
+            if (off > 6) styleMul -= Math.Min(0.05, (off - 6) * 0.004);
+            else if (off < -6) styleMul += Math.Min(0.05, (-6 - off) * 0.004);
 
             int rank = CurrentRank(r);
-            if (r.Style == RunStyle.Nige && rank > 1) styleMul += 0.02;
-            if (r.Style == RunStyle.Oikomi && phase < 2 && rank < 4) styleMul -= 0.02;
+            if (r.Style == RunStyle.Nige && rank > 2 && phase == 0)
+                styleMul += 0.012;
+            if (r.Style == RunStyle.Oikomi && phase < 2 && rank <= 3)
+                styleMul -= 0.012;
 
             return baseV * styleMul;
         }
