@@ -216,6 +216,7 @@ namespace uma_
         {
             double v = 15.4 + r.Horse.RaceSpeed / 50.0;
 
+            double styleMul;
             if (r.Style == RunStyle.Nige)
                 v *= phase == 0 ? 1.05 : phase == 1 ? 1.01 : 0.97;
             else if (r.Style == RunStyle.Senko)
