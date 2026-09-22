@@ -298,7 +298,6 @@ namespace uma_
                     r.ExtraAcc = 0;
                 }
             }
-
             if (r.Finished || r.Skills == null) return;
 
             SkillWhen now;
@@ -308,13 +307,27 @@ namespace uma_
             else if (r.Position >= Distance - 200) now = SkillWhen.Last200;
             else now = SkillWhen.Late;
 
+            int wit = r.Horse.Wit;
+            if (wit <= 0) wit = r.Horse.Luck;   // 還沒填智力就先用幸運
+
             foreach (var s in r.Skills)
             {
                 if (s.Used) continue;
                 if (s.When != now) continue;
 
-                int chance = 60 + r.Horse.Luck / 5;
-                if (rng.Next(1, 101) > chance) { s.Used = true; continue; }
+                // 智力低：這一段常常「沒發現窗口」，下一個 tick 再試
+                int notice = 40 + wit / 2;          // 70 智 ≈ 75%，40 智 ≈ 60%
+                if (rng.Next(1, 101) > notice)
+                    continue;                       // 不標 Used，之後同一階段還能再看
+
+                // 智力低：看到了但施放失敗（這次就沒了）
+                int success = 35 + wit * 2 / 3;     // 90 智 ≈ 95%，45 智 ≈ 65%
+                if (success > 92) success = 92;
+                if (rng.Next(1, 101) > success)
+                {
+                    s.Used = true;
+                    continue;
+                }
 
                 s.Used = true;
                 r.SkillTimer = s.Duration;

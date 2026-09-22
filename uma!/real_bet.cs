@@ -257,7 +257,7 @@ namespace uma_
             r.allHorses = allHorses;
             this.Hide();
             r.ShowDialog();
-            this.Show();
+            
 
             if (r.ResultOrder == null || r.ResultOrder.Count == 0)
             {
