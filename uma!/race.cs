@@ -10,6 +10,10 @@ namespace uma_
     {
         public List<auto_uma.Horse> SelectedHorses { get; set; }
         public List<auto_uma.Horse> allHorses { get; set; }
+        public List<auto_uma.Horse> ResultOrder { get; set; }
+        public List<real_bet.Ticket> Slips { get; set; }
+        public int Gain { get; set; }
+        public List<string> PayLines { get; set; }
 
         public RaceSim sim;
 
@@ -44,6 +48,7 @@ namespace uma_
                 txtReport.ScrollBars = ScrollBars.Vertical;
             }
             timer1.Interval = 50;
+            btnResult.Enabled = false;
         }
 
         private void SetupBoard()
@@ -106,9 +111,12 @@ namespace uma_
             if (done)
             {
                 timer1.Stop();
+               
+                ResultOrder = sim.Standings().Select(x => x.Horse).ToList();
                 var win = sim.Standings()[0];
                 Report(win.Horse.Name + " 抵達終點！");
-                SetTimeText(sim.Time.ToString("0.0") + "\"  完賽");
+                if (btnResult != null) btnResult.Enabled = true;
+
             }
         }
 
@@ -297,6 +305,23 @@ namespace uma_
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
+        }
+
+        private void btnX4_Click_1(object sender, EventArgs e)
+        {
+            timer1.Interval = 12;
+        }
+
+        private void btnX1_Click_1(object sender, EventArgs e)
+        {
+            timer1.Interval = 50;
+        }
+
+        private void btnResult_Click(object sender, EventArgs e)
+        {
+
+            last lastForm = new last();
+            this.Close();
         }
     }
 }

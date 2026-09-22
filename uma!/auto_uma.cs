@@ -34,6 +34,7 @@ namespace uma_
             public int RaceStamina;
             public int RaceBurst;
             public UmaForm Form;
+            public int Ninki;
 
             public Horse(string name, int speed, int stamina, int burst, int luck)
             {

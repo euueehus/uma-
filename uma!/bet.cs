@@ -80,7 +80,11 @@ namespace uma_
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            real_bet real_bet = new real_bet();
+            real_bet.SelectedHorses = SelectedHorses;
+            real_bet.allHorses = allHorses;
+            this.Hide();  //要用hideeeeeeee         
+            real_bet.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -90,6 +94,15 @@ namespace uma_
             race.allHorses = allHorses;
             this.Hide();  //要用hideeeeeeee         
             race.ShowDialog();
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f is list)
+                {
+                    f.Show();
+                    f.BringToFront();
+                    return;
+                }
+            }
         }
     }
     }

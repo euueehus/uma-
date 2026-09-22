@@ -71,6 +71,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="last.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="last.Designer.cs">
+      <DependentUpon>last.cs</DependentUpon>
+    </Compile>
     <Compile Include="list.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
       <DependentUpon>race.cs</DependentUpon>
     </Compile>
     <Compile Include="RaceSim.cs" />
+    <Compile Include="real_bet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="real_bet.Designer.cs">
+      <DependentUpon>real_bet.cs</DependentUpon>
+    </Compile>
     <Compile Include="show.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="last.resx">
+      <DependentUpon>last.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="list.resx">
       <DependentUpon>list.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="race.resx">
       <DependentUpon>race.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="real_bet.resx">
+      <DependentUpon>real_bet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="show.resx">
       <DependentUpon>show.cs</DependentUpon>

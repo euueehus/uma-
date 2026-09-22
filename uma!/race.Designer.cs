@@ -37,6 +37,7 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.btnX1 = new System.Windows.Forms.Button();
             this.btnX4 = new System.Windows.Forms.Button();
+            this.btnResult = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // timer1
@@ -103,6 +104,7 @@
             this.btnX1.TabIndex = 6;
             this.btnX1.Text = "1 倍速";
             this.btnX1.UseVisualStyleBackColor = true;
+            this.btnX1.Click += new System.EventHandler(this.btnX1_Click_1);
             // 
             // btnX4
             // 
@@ -113,6 +115,18 @@
             this.btnX4.TabIndex = 7;
             this.btnX4.Text = "4 倍速";
             this.btnX4.UseVisualStyleBackColor = true;
+            this.btnX4.Click += new System.EventHandler(this.btnX4_Click_1);
+            // 
+            // btnResult
+            // 
+            this.btnResult.Location = new System.Drawing.Point(1327, 63);
+            this.btnResult.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(127, 88);
+            this.btnResult.TabIndex = 8;
+            this.btnResult.Text = "成績";
+            this.btnResult.UseVisualStyleBackColor = true;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // race
             // 
@@ -121,6 +135,7 @@
             this.BackgroundImage = global::uma_.Properties.Resources.東京競馬場___panoramio___;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1924, 1044);
+            this.Controls.Add(this.btnResult);
             this.Controls.Add(this.btnX4);
             this.Controls.Add(this.btnX1);
             this.Controls.Add(this.lblTime);
@@ -147,5 +162,6 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Button btnX1;
         private System.Windows.Forms.Button btnX4;
+        private System.Windows.Forms.Button btnResult;
     }
 }
