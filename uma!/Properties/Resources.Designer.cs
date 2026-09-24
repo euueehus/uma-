@@ -19,7 +19,7 @@ namespace uma_.Properties {
     // 類別透過 ResGen 或 Visual Studio 這類工具。
     // 若要加入或移除成員，請編輯您的 .ResX 檔，然後重新執行 ResGen
     // (利用 /str 選項)，或重建您的 VS 專案。
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,26 @@ namespace uma_.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _1b74775aa80028684f67edf5e2432f38743f648f313513a1b24813b41074eb8a {
+            get {
+                object obj = ResourceManager.GetObject("1b74775aa80028684f67edf5e2432f38743f648f313513a1b24813b41074eb8a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _727519527_1530810065338729_8497146049453339656_n {
+            get {
+                object obj = ResourceManager.GetObject("727519527_1530810065338729_8497146049453339656_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -496,6 +516,46 @@ namespace uma_.Properties {
         internal static System.Drawing.Bitmap 螢幕擷取畫面_2026_09_03_213613 {
             get {
                 object obj = ResourceManager.GetObject("螢幕擷取畫面 2026-09-03 213613", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 螢幕擷取畫面_2026_09_24_094613 {
+            get {
+                object obj = ResourceManager.GetObject("螢幕擷取畫面 2026-09-24 094613", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 螢幕擷取畫面_2026_09_24_094744 {
+            get {
+                object obj = ResourceManager.GetObject("螢幕擷取畫面 2026-09-24 094744", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 螢幕擷取畫面_2026_09_24_095514 {
+            get {
+                object obj = ResourceManager.GetObject("螢幕擷取畫面 2026-09-24 095514", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 螢幕擷取畫面_2026_09_24_095808 {
+            get {
+                object obj = ResourceManager.GetObject("螢幕擷取畫面 2026-09-24 095808", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

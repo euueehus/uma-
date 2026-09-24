@@ -27,7 +27,7 @@ namespace uma_
         public double Value;
         public double Duration;
         public bool Used;
-
+        public double ReadyAt = -1;
         public UmaSkill(string name, SkillWhen when, SkillWhat what, double value, double duration = 3)
         {
             Name = name;

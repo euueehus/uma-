@@ -171,6 +171,17 @@ namespace uma_
         //    Done = Runners.All(x => x.Finished);
         //    return Done;
         //}
+        private void ApplySkill(RunnerState r, UmaSkill s, int wit)
+        {
+            double mul = 0.55 + wit / 160.0;   // 96→1.15、70→0.99、52→0.88
+            switch (s.What)
+            {
+                case SkillWhat.TargetUp: r.ExtraTarget += s.Value * mul; break;
+                case SkillWhat.Accel: r.ExtraAcc += s.Value * mul; break;
+                case SkillWhat.Heal: r.Hp = Math.Min(r.MaxHp, r.Hp + s.Value * mul); break;
+                case SkillWhat.SpeedUp: r.Speed += s.Value * mul; break;
+            }
+        }
         public bool Tick()
         {
             if (Done) return true;
@@ -308,30 +319,47 @@ namespace uma_
             else now = SkillWhen.Late;
 
             int wit = r.Horse.Wit;
-            if (wit <= 0) wit = r.Horse.Luck;   // 還沒填智力就先用幸運
+            if (wit <= 0) wit = r.Horse.Luck;   
 
             foreach (var s in r.Skills)
             {
                 if (s.Used) continue;
                 if (s.When != now) continue;
 
-                // 智力低：這一段常常「沒發現窗口」，下一個 tick 再試
-                int notice = 40 + wit / 2;          // 70 智 ≈ 75%，40 智 ≈ 60%
-                if (rng.Next(1, 101) > notice)
-                    continue;                       // 不標 Used，之後同一階段還能再看
+                
+                if (wit <= 0) wit = r.Horse.Luck;
 
-                // 智力低：看到了但施放失敗（這次就沒了）
-                int success = 35 + wit * 2 / 3;     // 90 智 ≈ 95%，45 智 ≈ 65%
-                if (success > 92) success = 92;
+                if (s.ReadyAt < 0)
+                {
+                    // 低智：這一段直接沒發現（整場這招沒了）
+                    int missWhole = Math.Max(0, 55 - wit);   // 96→0%、70→0%、52→3%、40→15%
+                    if (rng.Next(1, 101) <= missWhole)
+                    {
+                        s.Used = true;
+                        continue;
+                    }
+
+                    // 高智幾乎立刻；低智拖到段尾，可能段過了還沒輪到
+                    double wait = (100 - wit) * 0.12 + rng.NextDouble() * (110 - wit) * 0.04;
+                    s.ReadyAt = Time + wait;
+                    continue;
+                }
+
+                if (Time < s.ReadyAt) continue;
+
+                // 到點了還可能空放
+                int success = 20 + wit * 3 / 4;    // 96→92、70→72、52→59
+                if (success > 93) success = 93;
                 if (rng.Next(1, 101) > success)
                 {
                     s.Used = true;
+                    SkillLog.Add(r.Horse.Name + " 技能發動失敗");
                     continue;
                 }
 
                 s.Used = true;
-                r.SkillTimer = s.Duration;
-                ApplySkill(r, s);
+                r.SkillTimer = s.Duration * (0.7 + wit / 250.0);  // 高智持續稍長
+                ApplySkill(r, s, wit);
                 SkillLog.Add("『" + s.Name + "』  " + r.Horse.Name);
             }
         }

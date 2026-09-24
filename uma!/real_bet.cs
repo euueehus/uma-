@@ -149,6 +149,7 @@ namespace uma_
 
         private void real_bet_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             cmbTicket.Items.Clear();
             cmbTicket.Items.Add("單勝");
             cmbTicket.Items.Add("複勝");
@@ -171,6 +172,14 @@ namespace uma_
 
             FillField();
             lblMoney.Text = "資金  " + Money;
+            if (SelectedHorses == null || SelectedHorses.Count == 0) return;
+
+            horse_card1.SetHorses(SelectedHorses);
+            if (allHorses == null || allHorses.Count == 0)
+                return;
+            label1.Text = "| 單勝  | 単勝  | 選 1 匹，必須第 1 |\r\n "+
+               "| 複勝  | 複勝  | 選 1 匹，進前 3（5～7 匹擇前 2）|\r\n"+
+               "| 馬連  | 馬連  | 選 2 匹，第 1、2 不問順序  |";
         }
 
         private void FillField()
@@ -306,6 +315,30 @@ namespace uma_
             lstSlips.Items.Clear();
         }
         private void lstSlips_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            horse_card1.Visible = true;
+            button2.Visible = true;
+            button1.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            horse_card1.Visible = false;
+            button2.Visible = false;
+            button1.Visible = true;
+        }
+
+        private void horse_card1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

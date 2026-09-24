@@ -57,6 +57,7 @@ namespace uma_
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             MessageBox.Show("本作品的時間線與現實並不同 請勿較真");
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void button1_Click(object sender, EventArgs e)

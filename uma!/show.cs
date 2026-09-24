@@ -44,8 +44,9 @@ namespace uma_
         {
             if (SelectedHorses == null || SelectedHorses.Count == 0) return;
 
-            horse_card1.SetHorses(SelectedHorses);   
-            
+            horse_card1.SetHorses(SelectedHorses);
+            this.WindowState = FormWindowState.Maximized;
+
         }
 
         private void button1_Click(object sender, EventArgs e)

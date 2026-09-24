@@ -45,6 +45,7 @@ namespace uma_
 
         private void last_Load_1(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             lvResult.View = View.Details;
             lvResult.FullRowSelect = true;
             if (lvResult.Columns.Count == 0)

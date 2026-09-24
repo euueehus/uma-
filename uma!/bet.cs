@@ -22,6 +22,7 @@ namespace uma_
         
         private void bet_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             if (SelectedHorses == null || SelectedHorses.Count == 0) return;
 
             horse_card1.SetHorses(SelectedHorses);

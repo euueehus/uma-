@@ -395,5 +395,23 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\727519527_1530810065338729_8497146049453339656_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\螢幕擷取畫面 2026-09-24 094613.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\螢幕擷取畫面 2026-09-24 094744.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\螢幕擷取畫面 2026-09-24 095514.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\螢幕擷取畫面 2026-09-24 095808.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1b74775aa80028684f67edf5e2432f38743f648f313513a1b24813b41074eb8a.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

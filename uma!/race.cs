@@ -39,6 +39,7 @@ namespace uma_
 
         private void race_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             SetupBoard();
             if (lblTitle != null) lblTitle.Text = "東京競馬場　草地　1600m　右";
             if (lblTime != null) lblTime.Text = "0.0\"";

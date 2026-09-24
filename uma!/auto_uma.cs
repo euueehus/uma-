@@ -349,6 +349,7 @@ namespace uma_
 
         private void auto_uma_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             AttachSkills();
         }
     }

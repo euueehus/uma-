@@ -47,10 +47,9 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(619, 63);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStart.Location = new System.Drawing.Point(626, 166);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(127, 88);
+            this.btnStart.Size = new System.Drawing.Size(85, 59);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "開始";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -59,29 +58,30 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(579, 159);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
+            this.listView1.Location = new System.Drawing.Point(599, 230);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(901, 558);
+            this.listView1.Size = new System.Drawing.Size(602, 373);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // txtReport
             // 
-            this.txtReport.Location = new System.Drawing.Point(579, 768);
+            this.txtReport.Location = new System.Drawing.Point(599, 636);
+            this.txtReport.Margin = new System.Windows.Forms.Padding(2);
             this.txtReport.Multiline = true;
             this.txtReport.Name = "txtReport";
-            this.txtReport.Size = new System.Drawing.Size(918, 264);
+            this.txtReport.Size = new System.Drawing.Size(613, 177);
             this.txtReport.TabIndex = 3;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblTitle.Location = new System.Drawing.Point(600, 24);
+            this.lblTitle.Location = new System.Drawing.Point(613, 140);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(64, 24);
+            this.lblTitle.Size = new System.Drawing.Size(45, 16);
             this.lblTitle.TabIndex = 4;
             this.lblTitle.Text = "label1";
             // 
@@ -89,18 +89,18 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblTime.Location = new System.Drawing.Point(1267, 24);
+            this.lblTime.Location = new System.Drawing.Point(1058, 140);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(64, 24);
+            this.lblTime.Size = new System.Drawing.Size(45, 16);
             this.lblTime.TabIndex = 5;
             this.lblTime.Text = "label1";
             // 
             // btnX1
             // 
-            this.btnX1.Location = new System.Drawing.Point(841, 63);
-            this.btnX1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnX1.Location = new System.Drawing.Point(774, 166);
             this.btnX1.Name = "btnX1";
-            this.btnX1.Size = new System.Drawing.Size(127, 88);
+            this.btnX1.Size = new System.Drawing.Size(85, 59);
             this.btnX1.TabIndex = 6;
             this.btnX1.Text = "1 倍速";
             this.btnX1.UseVisualStyleBackColor = true;
@@ -108,10 +108,9 @@
             // 
             // btnX4
             // 
-            this.btnX4.Location = new System.Drawing.Point(1098, 63);
-            this.btnX4.Margin = new System.Windows.Forms.Padding(4);
+            this.btnX4.Location = new System.Drawing.Point(945, 166);
             this.btnX4.Name = "btnX4";
-            this.btnX4.Size = new System.Drawing.Size(127, 88);
+            this.btnX4.Size = new System.Drawing.Size(85, 59);
             this.btnX4.TabIndex = 7;
             this.btnX4.Text = "4 倍速";
             this.btnX4.UseVisualStyleBackColor = true;
@@ -119,10 +118,9 @@
             // 
             // btnResult
             // 
-            this.btnResult.Location = new System.Drawing.Point(1327, 63);
-            this.btnResult.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResult.Location = new System.Drawing.Point(1098, 166);
             this.btnResult.Name = "btnResult";
-            this.btnResult.Size = new System.Drawing.Size(127, 88);
+            this.btnResult.Size = new System.Drawing.Size(85, 59);
             this.btnResult.TabIndex = 8;
             this.btnResult.Text = "成績";
             this.btnResult.UseVisualStyleBackColor = true;
@@ -130,11 +128,11 @@
             // 
             // race
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::uma_.Properties.Resources.東京競馬場___panoramio___;
+            this.BackgroundImage = global::uma_.Properties.Resources.東京競馬場___panoramio__4_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1924, 1044);
+            this.ClientSize = new System.Drawing.Size(1819, 847);
             this.Controls.Add(this.btnResult);
             this.Controls.Add(this.btnX4);
             this.Controls.Add(this.btnX1);
@@ -143,9 +141,7 @@
             this.Controls.Add(this.txtReport);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnStart);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "race";
-            this.Text = "race";
             this.Load += new System.EventHandler(this.race_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

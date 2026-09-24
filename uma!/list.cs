@@ -39,5 +39,15 @@ namespace uma_
             this.Hide();  //要用hideeeeeeee         
             auto_uma.ShowDialog();
         }
+
+        private void list_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
